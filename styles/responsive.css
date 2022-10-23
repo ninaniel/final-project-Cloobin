@@ -14,7 +14,7 @@
         display: block;
         color: var(--main-text-color);
         font-size: 32px;
-        margin-top: 18px;
+        margin:10px;
         text-shadow: 0px 0px 3px var(--main-text-color);
     }
     .navigation.navActive {
@@ -34,6 +34,9 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+    }
+    .logo {
+        width: 40%;
     }
 }
 @media (max-width: 1220px) {
