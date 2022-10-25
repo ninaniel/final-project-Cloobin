@@ -667,24 +667,6 @@ h1 {
 .discoBall {
     width: 100%;
 }
-/* .discoBall {
-        animation: discoBall 1s infinite;
-    }
-@keyframes discoBall {
-    0% { transform: translate(1px, 1px) rotate(0deg);  }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-     */
-
 .gallery{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -747,21 +729,13 @@ h1 {
 /* CONTACT */
 
 .contact-container {
-    background-image: url(../pics/CONTACT\ BG.jpg);  
+    background-image: url(../pics/);
+    background-image: var(--main-transparent-color);  
 }
 .contact-flex {
     max-width: 1600px;
     width: 95%;
     margin: 100px auto 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
 }
 .checkbox {
     display: -webkit-box;
@@ -769,45 +743,41 @@ h1 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start
-    
-    
 }
+
 .contact-form {
-    max-width: 800px;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 .form{
     height: auto;
+    max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-wrap: wrap;
+
 }
+.form-block {
+    width: 50%;
+    padding: 2%;
+}
+
 .review-title {
-    font: bold 14px var(--main-font);
+    font: bold 16px var(--main-font);
     color: var(--main-bg-color);
+    text-align: center;
+    padding-top: 20px;
 
 }
 .checkbox-item, .radioItem {
