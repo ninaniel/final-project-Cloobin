@@ -4,7 +4,6 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
 :root {
     --main-bg-color:  #21212E;
     --main-transparent-color: linear-gradient(to right, #BD11FA , #46C2FF);
@@ -748,10 +747,17 @@ h1 {
 .contact-form {
     width: 100%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
 }
 .form{
@@ -765,7 +771,8 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
 }
 .form-block {

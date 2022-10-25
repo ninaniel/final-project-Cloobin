@@ -5,7 +5,6 @@
 * Browsers: last 4 version
 */
 
-
 @media (max-width: 800px) {
     .navigation {
         display: none;
@@ -245,7 +244,9 @@ textarea {
         width: 80%;
 }
 .form {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 }
 
@@ -278,11 +279,15 @@ textarea {
     .footer-box:nth-child(1),
     .icons{
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
     .footer-box:nth-child(1) img {
         width: 45%;
     }
 }
-
